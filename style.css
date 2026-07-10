@@ -1,0 +1,211 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 30px;
+    background: linear-gradient(135deg, #1e1e2f, #2b5876, #4e4376);
+    background-size: 300% 300%;
+    animation: gradientMove 12s ease infinite;
+    color: #ffffff;
+}
+
+/* Animasi background */
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-size: 34px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    margin-top: 50px;
+    margin-bottom: 25px;
+    text-align: center;
+    font-weight: 500;
+}
+
+/* CONTAINER FLEX */
+.layanan-container,
+.galeri-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+/* CARD */
+.layanan-item,
+.galeri-item {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 15px;
+    width: 260px; /* UKURAN TETAP */
+    border-radius: 14px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(255,255,255,0.15);
+}
+
+/* Hover effect */
+.layanan-item:hover,
+.galeri-item:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+}
+
+/* IMAGE */
+.layanan-item img,
+.galeri-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+
+/* PRICE */
+.harga {
+    font-weight: bold;
+    color: #ffd369;
+    font-size: 17px;
+}
+
+/* NAVIGATION */
+.nav-link {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.nav-link a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    text-decoration: none;
+    color: #1e1e2f;
+    background: #ffd369;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.nav-link a:hover {
+    background: #ffffff;
+    transform: scale(1.08);
+}
+
+/* RESET BODY */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+}
+
+/* HEADER */
+.header {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0,0,0,0.3);
+}
+
+/* LOKASI SECTION */
+.lokasi-section {
+    width: 95%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+/* ALAMAT */
+.alamat {
+    margin-bottom: 25px;
+    font-size: 18px;
+}
+
+/* MAP */
+.map-wrapper {
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+}
+
+.map-wrapper iframe {
+    width: 100%;
+    height: 450px;
+    border: none;
+}
+
+/* ================= KONTAK PAGE CLEAN ================= */
+
+.kontak-container {
+    width: 95%;
+    margin: 40px auto;
+    color: #222;
+}
+
+.kontak-info {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.kontak-info a {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.kontak-info a:hover {
+    text-decoration: underline;
+}
+
+.form-box {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.form-box input,
+.form-box textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.form-box button {
+    width: 100%;
+    padding: 12px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-box button:hover {
+    background: #0056b3;
+}
+
+.msg {
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: green;
+}
